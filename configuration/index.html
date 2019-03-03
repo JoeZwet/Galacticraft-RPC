@@ -450,24 +450,28 @@
 </thead>
 <tbody>
 <tr>
-<td>${PLANET}</td>
+<td>@PLANET@</td>
 <td>Planet/Moon the player is on.</td>
-<td>Exploring ${PLANET}</td>
+<td>Exploring @PLANET@</td>
 </tr>
 <tr>
-<td>${PARENT}</td>
+<td>@PARENT@</td>
 <td>Parent planet of the Space Station the player is on.</td>
-<td>Orbiting ${PARENT}</td>
+<td>Orbiting @PARENT@</td>
 </tr>
 </tbody>
 </table>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Placeholders only work for <code>on_planet</code>, <code>on_moon</code> and <code>on_station</code> messages.</p>
+</div>
 <h2 id="messages">Messages<a class="headerlink" href="#messages" title="Permanent link">&para;</a></h2>
 <p>You can customize messages that are displayed on Discord using the messages section.</p>
 <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;messages&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;on_planet&quot;</span><span class="p">:</span> <span class="s2">&quot;Exploring ${PLANET}&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;on_moon&quot;</span><span class="p">:</span> <span class="s2">&quot;Exploring ${PLANET}&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;on_station&quot;</span><span class="p">:</span> <span class="s2">&quot;Orbiting ${PARENT}&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;on_planet&quot;</span><span class="p">:</span> <span class="s2">&quot;Exploring @PLANET@&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;on_moon&quot;</span><span class="p">:</span> <span class="s2">&quot;Exploring @PLANET@&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;on_station&quot;</span><span class="p">:</span> <span class="s2">&quot;Orbiting @PARENT@&quot;</span><span class="p">,</span>
         <span class="nt">&quot;singleplayer&quot;</span><span class="p">:</span> <span class="s2">&quot;Playing Singleplayer&quot;</span><span class="p">,</span>
         <span class="nt">&quot;multiplayer&quot;</span><span class="p">:</span> <span class="s2">&quot;Playing Multiplayer&quot;</span><span class="p">,</span>
         <span class="nt">&quot;icon_text&quot;</span><span class="p">:</span> <span class="s2">&quot;Playing X Modpack on the Twitch Launcher.&quot;</span>
@@ -486,12 +490,12 @@
         <span class="nt">&quot;show_station&quot;</span><span class="p">:</span> <span class="kc">true</span>
     <span class="p">},</span>
     <span class="nt">&quot;messages&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;on_planet&quot;</span><span class="p">:</span> <span class="s2">&quot;Exploring ${PLANET}&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;on_moon&quot;</span><span class="p">:</span> <span class="s2">&quot;Exploring ${PLANET}&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;on_station&quot;</span><span class="p">:</span> <span class="s2">&quot;Orbiting ${PARENT}&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;on_planet&quot;</span><span class="p">:</span> <span class="s2">&quot;Exploring @PLANET@&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;on_moon&quot;</span><span class="p">:</span> <span class="s2">&quot;Exploring @PLANET@&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;on_station&quot;</span><span class="p">:</span> <span class="s2">&quot;Orbiting @PARENT@&quot;</span><span class="p">,</span>
         <span class="nt">&quot;singleplayer&quot;</span><span class="p">:</span> <span class="s2">&quot;Playing Singleplayer&quot;</span><span class="p">,</span>
         <span class="nt">&quot;multiplayer&quot;</span><span class="p">:</span> <span class="s2">&quot;Playing Multiplayer&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;icon&quot;</span><span class="p">:</span> <span class="s2">&quot;Playing X Modpack on the Twitch Launcher.&quot;</span>
+        <span class="nt">&quot;icon_text&quot;</span><span class="p">:</span> <span class="s2">&quot;Playing X Modpack on the Twitch Launcher.&quot;</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
